@@ -18,6 +18,7 @@ type Config struct {
 	EnableLogging     bool
 	LogLevel          string
 	DataRetentionDays int
+	AlpacaDataFeed    string
 }
 
 var AppConfig *Config
@@ -39,6 +40,7 @@ func Load() error {
 		EnableLogging:     getEnvOrDefault("ENABLE_LOGGING", "true") == "true",
 		LogLevel:          getEnvOrDefault("LOG_LEVEL", "info"),
 		DataRetentionDays: 90,
+		AlpacaDataFeed:    getEnvOrDefault("ALPACA_DATA_FEED", "iex"),
 	}
 
 	return nil

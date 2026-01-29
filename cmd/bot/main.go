@@ -52,6 +52,7 @@ func main() {
 		cfg.AlpacaSecretKey,
 		cfg.AlpacaBaseURL,
 		cfg.AlpacaPaper,
+		cfg.AlpacaDataFeed,
 	)
 	if err != nil {
 		logger.Fatal("Failed to create trading service:", err)
@@ -61,6 +62,7 @@ func main() {
 	dataService := services.NewAlpacaDataService(
 		cfg.AlpacaAPIKey,
 		cfg.AlpacaSecretKey,
+		cfg.AlpacaDataFeed,
 	)
 
 	// Create storage service

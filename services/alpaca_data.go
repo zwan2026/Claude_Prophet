@@ -17,10 +17,11 @@ type AlpacaDataService struct {
 }
 
 // NewAlpacaDataService creates a new Alpaca data service
-func NewAlpacaDataService(apiKey, secretKey string) *AlpacaDataService {
+func NewAlpacaDataService(apiKey, secretKey, dataFeed string) *AlpacaDataService {
 	client := marketdata.NewClient(marketdata.ClientOpts{
 		APIKey:    apiKey,
 		APISecret: secretKey,
+		Feed:      marketdata.Feed(dataFeed),
 	})
 
 	logger := logrus.New()

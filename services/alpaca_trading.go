@@ -25,7 +25,7 @@ type AlpacaTradingService struct {
 }
 
 // NewAlpacaTradingService creates a new Alpaca trading service
-func NewAlpacaTradingService(apiKey, secretKey, baseURL string, isPaper bool) (*AlpacaTradingService, error) {
+func NewAlpacaTradingService(apiKey, secretKey, baseURL string, isPaper bool, dataFeed string) (*AlpacaTradingService, error) {
 	client := alpaca.NewClient(alpaca.ClientOpts{
 		APIKey:    apiKey,
 		APISecret: secretKey,
@@ -36,6 +36,7 @@ func NewAlpacaTradingService(apiKey, secretKey, baseURL string, isPaper bool) (*
 	dataClient := marketdata.NewClient(marketdata.ClientOpts{
 		APIKey:    apiKey,
 		APISecret: secretKey,
+		Feed:      marketdata.Feed(dataFeed),
 	})
 
 	logger := logrus.New()
