@@ -68,7 +68,7 @@ echo ""
 claude --print \
        --verbose \
        --output-format stream-json \
-       --permission-mode acceptEdits \
+       --permission-mode bypassPermissions \
        "$(cat autonomous_trading_prompt.txt)" \
        | tee "$LOG_FILE"
 

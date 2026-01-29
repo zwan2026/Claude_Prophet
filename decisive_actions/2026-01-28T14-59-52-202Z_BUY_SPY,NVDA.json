@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-28T14:59:52.202Z",
+  "action": "BUY",
+  "symbol": "SPY,NVDA",
+  "reasoning": "Entered 4 positions: 2 scalps (Jan 30 DTE) and 2 swings (Feb 20 DTE). SPY and NVDA calls. Market bullish with S&P above 7000. Total deployed ~$13K (13% of portfolio). Mental stops at -15%.",
+  "market_data": {
+    "SPY_price": 697.39,
+    "NVDA_price": 191.84,
+    "SPY_scalp_strike": 697,
+    "NVDA_scalp_strike": 190,
+    "SPY_swing_strike": 697,
+    "NVDA_swing_strike": 190
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-01-28T15:42:53.941Z",
+  "action": "SELL",
+  "symbol": "SPY260130C00697000, NVDA260130C00190000",
+  "reasoning": "STOP LOSS TRIGGERED: Both scalps hit -15% threshold. SPY scalp at -14.8%, NVDA scalp at -14.5%. Per trading rules, cutting losers immediately when down >15% regardless of thesis. Market selling off ahead of Fed decision.",
+  "market_data": {
+    "SPY_price": 696.03,
+    "NVDA_price": 191.03,
+    "SPY_scalp_loss_pct": -14.8,
+    "NVDA_scalp_loss_pct": -14.5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-28T20:05:58.657Z",
+  "action": "SELL",
+  "symbol": "SPY260130C00695000",
+  "reasoning": "Closing 2 DTE scalp per rules (close all scalps by EOD). SPY at session highs ~$695.58 — best exit opportunity. Taking -3.4% loss ($65) rather than risk overnight theta on 2 DTE. Entered at $3.86, exiting at $3.73. Discipline over hope.",
+  "market_data": {
+    "SPY_price": 695.58,
+    "exit_premium": 3.73,
+    "entry_premium": 3.86,
+    "loss_pct": -3.4,
+    "loss_dollars": -65,
+    "DTE_remaining": 2
+  }
+}

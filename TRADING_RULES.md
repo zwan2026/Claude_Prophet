@@ -135,6 +135,7 @@
 - After: End of day summary, major exits, strategic decisions
 - Format: Use `mcp__prophet__log_decision` tool
 - Purpose: Audit trail, learning from mistakes
+- **daily_PL_pct 计算规则**: EOD summary 中的 daily_PL_pct 必须等于 `(portfolio_value - starting_capital) / starting_capital * 100`。不要只算当前 session 的盈亏，必须包含全天所有已实现和未实现损益。portfolio_value 和 daily_PL_pct 必须一致，不能自相矛盾。
 
 **Rule:** Log daily activity to `activity_logs/`
 - Track: Position checks, analysis, intelligence gathering

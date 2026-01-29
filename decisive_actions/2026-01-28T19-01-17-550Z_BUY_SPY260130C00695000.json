@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-28T19:01:17.550Z",
+  "action": "BUY",
+  "symbol": "SPY260130C00695000",
+  "reasoning": "Scalp entry: SPY $695C 1/30 exp (2 DTE). S&P above 7000, tech rallying before Fed. Tight spread (1.8%). Limit at mid $3.87 x5 contracts = ~$1,935. Stop: -15% ($3.29). Target: +25% ($4.84). Will close by EOD per scalp rules.",
+  "market_data": {
+    "SPY_price": 694.85,
+    "entry_premium": 3.87,
+    "delta": 0.53,
+    "DTE": 2,
+    "contracts": 5,
+    "total_cost": 1935
+  }
+}
